@@ -51,6 +51,17 @@ Then, you should have something like this:
 > After `#../` in `{{ asset('/laraview/#../folder-name/the-pdf-file.pdf') }}`, what should follow is the folder name of the pdf files in the public 
 folder then, the pdf file name can follow.
 
+** from source repo **
+```
+Remove Goodnesskay\LaravelPdfViewer\LaravelPdfViewerServiceProvider::class, from config/app.php, providers key,
+Copy folder laraview
+from: vendor\goodnesskay\laravelpdfviewer
+to: public
+
+Copy pdf file (whatever), ex test.pdf, to public folder
+Test, open Browser
+http://xxx.xxx.xx/laraview/#../test.pdf
+```
 
 
 ## Contribute
